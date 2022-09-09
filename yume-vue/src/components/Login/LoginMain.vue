@@ -1,11 +1,9 @@
 <template>
     <el-card class="box-card">
 
-        <h3 align="center">用户登录</h3>
-        <!-- 向上顶开 -->
-        <div style="margin-top: 60px;" />
+        <h3 style="margin:0 260px;">用户登录</h3>
         <!-- 表单 -->
-        <el-form style="margin-left: 140px;">
+        <el-form style="margin-left: 140px;margin-top: 60px;">
             <el-form :label-position="labelPosition" label-width="100px" :model="formLabelAlign"
                 style="max-width: 350px">
                 <el-form-item label="Name">
