@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.fsyume.yume</groupId>
-    <artifactId>yume-jdk8</artifactId>
+    <artifactId>yume</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>yume-jdk8</name>
-    <description>yume-jdk8</description>
+    <name>yume</name>
+    <description>yume</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>

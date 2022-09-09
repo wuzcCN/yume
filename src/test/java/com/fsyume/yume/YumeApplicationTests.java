@@ -17,21 +17,29 @@ class YumeApplicationTests {
 
     @Test
     public void testSelect() {
-        System.out.println(("----- selectAll method test ------"));
         List<User> userList = userMapper.selectList(null);
         userList.forEach(System.out::println);
 
         // 条件构造器
         QueryWrapper<User> wrapper = new QueryWrapper<>();
-        QueryWrapper<User> eq = wrapper.eq("name", "Jone");
+        QueryWrapper<User> eq = wrapper.eq("user_name", "Jone");
 
         User user = userMapper.selectOne(eq);
         System.out.println("查询结果：" + user);
     }
 
     @Test
-    public void testGet(){
+    public void testInsert(){
+        User user = new User();
 
+        user.setUserName("测试账户");
+        user.setUserEmail("teset@fsyu.me");
+        user.setUserPassword("123456");
+
+
+        int insert = userMapper.insert(user);
+
+        System.out.println(insert);
     }
 
 }
