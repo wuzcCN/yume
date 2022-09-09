@@ -2,7 +2,7 @@
     <el-card class="box-card">
 
         <h3 align="center">用户登录</h3>
-        <!-- 向下顶开 -->
+        <!-- 向上顶开 -->
         <div style="margin-top: 60px;" />
         <!-- 表单 -->
         <el-form style="margin-left: 140px;">
@@ -51,12 +51,4 @@
       passwoed: '',
       Code:'',
     })
-
-    const onSubmit = () => {
-        alert('submit! 提交')
-    }
-
-    const onRegister = () => {
-        alert('register!')
-    }
 </script>
